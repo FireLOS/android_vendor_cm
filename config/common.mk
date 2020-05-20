@@ -120,14 +120,17 @@ PRODUCT_PACKAGES += \
     AudioFX \
     CMSettingsProvider \
     LineageSetupWizard \
-    Eleven \
     ExactCalculator \
-    Jelly \
     LockClock \
-    Trebuchet \
     Updater \
     WallpaperPicker \
     WeatherProvider
+
+# Fire Lineage stuff
+PRODUCT_PACKAGES += \
+    Bromite \
+    BroWeb \
+    Lawnchair
 
 # Exchange support
 PRODUCT_PACKAGES += \
@@ -361,11 +364,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 -include vendor/cm/config/partner_gms.mk
 -include vendor/cyngn/product.mk
 
-# Bromite web browser
-PRODUCT_PACKAGES += \
-    Bromite \
-    BroWeb
-    
+
 $(call prepend-product-if-exists, vendor/extra/product.mk)
 
 $(call inherit-product-if-exists, vendor/apps/apps.mk)
