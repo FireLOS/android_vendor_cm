@@ -361,6 +361,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 -include vendor/cm/config/partner_gms.mk
 -include vendor/cyngn/product.mk
 
+# Bromite web browser
+PRODUCT_PACKAGES += \
+    Bromite \
+    BroWeb
+    
 $(call prepend-product-if-exists, vendor/extra/product.mk)
 
 $(call inherit-product-if-exists, vendor/apps/apps.mk)
