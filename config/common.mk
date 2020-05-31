@@ -368,3 +368,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call prepend-product-if-exists, vendor/extra/product.mk)
 
 $(call inherit-product-if-exists, vendor/apps/apps.mk)
+$(call inherit-product-if-exists, vendor/fire/fire.mk)
+$(call inherit-product-if-exists, vendor/microg/microg.mk)
