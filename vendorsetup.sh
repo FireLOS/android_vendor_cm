@@ -39,3 +39,4 @@ do
     add_lunch_combo $combo
 done
 
+export "NOTE if you get an error with flex run  ' export LC_ALL=C ' in terminal."
